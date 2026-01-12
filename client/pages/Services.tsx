@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import HorizontalTestimonialScroll from "@/components/HorizontalTestimonialScroll";
 
 export default function Services() {
   const services = [
@@ -128,6 +129,105 @@ export default function Services() {
         "Best practices implementation",
         "Knowledge transfer",
       ],
+    },
+  ];
+
+  const testimonials = [
+    {
+      author: "Michael Chen",
+      title: "Portfolio Manager",
+      company: "Global Trading Group",
+      text: "TradeSense transformed our trading strategy. We've increased ROI significantly with AI-driven insights. Highly recommended!",
+      rating: 5,
+      image: "MC",
+    },
+    {
+      author: "Sarah Williams",
+      title: "Customer Success Manager",
+      company: "TechWave Solutions",
+      text: "AutoSupport chatbot reduced our support costs by 85%. Customer satisfaction improved dramatically. Amazing platform!",
+      rating: 5,
+      image: "SW",
+    },
+    {
+      author: "David Kumar",
+      title: "Startup Founder",
+      company: "InnovateLabs",
+      text: "StartupFlow streamlined our entire workflow. We went from 5 tools to 1 unified platform. Game-changer!",
+      rating: 5,
+      image: "DK",
+    },
+    {
+      author: "Emma Rodriguez",
+      title: "Lead Developer",
+      company: "CodeFlow Inc.",
+      text: "DevAssist Copilot reduced development time by 42%. The code suggestions are incredibly accurate and context-aware.",
+      rating: 5,
+      image: "ER",
+    },
+    {
+      author: "James Patterson",
+      title: "Security Director",
+      company: "SecureVault Ltd",
+      text: "SecureVault exceeded our security standards. Zero-trust architecture gives us complete peace of mind.",
+      rating: 5,
+      image: "JP",
+    },
+    {
+      author: "Lisa Johnson",
+      title: "Data Analyst",
+      company: "Analytics Corp",
+      text: "AnalyticsPro enabled us to discover insights we never knew existed. Decision-making is now truly data-driven.",
+      rating: 5,
+      image: "LJ",
+    },
+    {
+      author: "Marcus Thompson",
+      title: "CTO",
+      company: "TechVentures Inc",
+      text: "The team's technical expertise is unmatched. They delivered our project 2 weeks ahead of schedule. Exceptional!",
+      rating: 5,
+      image: "MT",
+    },
+    {
+      author: "Priya Desai",
+      title: "Product Manager",
+      company: "InnovateSoft",
+      text: "Working with FixBitAI was a breeze. Their communication, technical skills, and commitment to quality are outstanding.",
+      rating: 5,
+      image: "PD",
+    },
+    {
+      author: "Robert Wilson",
+      title: "Operations Manager",
+      company: "Global Logistics",
+      text: "FixBitAI transformed our operations. The custom solution they built saved us thousands monthly. Highly satisfied!",
+      rating: 5,
+      image: "RW",
+    },
+    {
+      author: "Nina Patel",
+      title: "Founder",
+      company: "Startup Hub",
+      text: "As a startup, we needed affordable yet powerful solutions. FixBitAI delivered beyond expectations. Fantastic team!",
+      rating: 5,
+      image: "NP",
+    },
+    {
+      author: "Alex Chen",
+      title: "Engineering Lead",
+      company: "CloudScale Systems",
+      text: "Their AI expertise is world-class. They integrated cutting-edge AI into our platform seamlessly. Brilliant work!",
+      rating: 5,
+      image: "AC",
+    },
+    {
+      author: "Sofia Martinez",
+      title: "VP Product",
+      company: "FinTech Innovations",
+      text: "FixBitAI's attention to detail and user-centric approach is refreshing. Our product is now industry-leading!",
+      rating: 5,
+      image: "SM",
     },
   ];
 
@@ -268,7 +368,7 @@ export default function Services() {
       </section>
 
       {/* Testimonial Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-4">
@@ -312,6 +412,16 @@ export default function Services() {
               </div>
             ))}
           </div>
+        </div>
+      </section> */}
+
+      {/* Client Testimonials Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/50">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-foreground mb-12 text-center">
+            What Our Clients Say
+          </h2>
+          <HorizontalTestimonialScroll testimonials={testimonials} scrollSpeed={0.5} />
         </div>
       </section>
 

@@ -76,7 +76,7 @@ export default function HorizontalTestimonialScroll({
         {[...testimonials, ...testimonials].map((testimonial, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-64 bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-primary transition-all duration-300 hover:-translate-y-1"
+            className="flex-shrink-0 w-96 bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-primary transition-all duration-300 hover:-translate-y-1"
           >
             {/* Stars Rating */}
             <div className="flex gap-1 mb-3">
@@ -117,9 +117,9 @@ export default function HorizontalTestimonialScroll({
       </div>
 
       {/* Info Text */}
-      <p className="text-center text-sm text-muted-foreground mt-6">
+      {/* <p className="text-center text-sm text-muted-foreground mt-6">
         ⏸️ Hover to pause • Scroll continues automatically
-      </p>
+      </p> */}
     </div>
   );
 }

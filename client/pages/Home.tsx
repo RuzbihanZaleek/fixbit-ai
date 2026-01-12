@@ -143,12 +143,12 @@ export default function Home() {
       {/* Hero Section */}
       <section
         className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
-        style={{
-          backgroundImage: "url('https://images.pexels.com/photos/17483910/pexels-photo-17483910.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-        }}
+        // style={{
+        //   backgroundImage: "url('https://images.pexels.com/photos/17483910/pexels-photo-17483910.png')",
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        //   backgroundAttachment: "fixed",
+        // }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-background/85 via-background/75 to-secondary/30 pointer-events-none" />
         <div className="max-w-7xl mx-auto relative z-10">
